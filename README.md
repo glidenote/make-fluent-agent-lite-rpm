@@ -5,11 +5,14 @@
 
 ## 使い方
 
-    git clone https://github.com/glidenote/make-fluent-agent-lite-rpm
-    cd make-fluent-agent-lite-rpm
-    sh make-rpm.sh 0.4
+``` sh
+git clone https://github.com/glidenote/make-fluent-agent-lite-rpm
+cd make-fluent-agent-lite-rpm
+sh make-rpm.sh 0.9
+```
 
 こける場合は`0.2`とかにバージョンを落とすとうまくいく。
 
-    sh make-rpm.sh 0.2
-
+```
+sh make-rpm.sh 0.2
+```
