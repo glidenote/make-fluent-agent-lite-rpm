@@ -14,6 +14,7 @@ tar xvzf fluent-agent-lite.v$version.tar.gz
 
 # setup rpmbuild env
 echo "%_topdir $cur/rpmbuild/" > ~/.rpmmacros
+echo "%__arch_install_post   /usr/lib/rpm/check-rpaths /usr/lib/rpm/check-buildroot" >> ~/.rpmmacros
 rm -fR rpmbuild
 mkdir rpmbuild
 pushd rpmbuild
