@@ -29,6 +29,6 @@ cp ../fluent-agent-lite-$version/package/fluent-agent-lite.conf SOURCES
 # locate init.d script
 cp ../fluent-agent-lite-$version/package/fluent-agent-lite.init SOURCES
 # build
-rpmbuild -v -ba --clean SPECS/fluent-agent-lite.spec
+QA_RPATHS=$[0x001] rpmbuild -v -ba --clean SPECS/fluent-agent-lite.spec
 popd
 
